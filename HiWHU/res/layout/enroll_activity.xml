@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <EditText
+        android:id="@+id/search_content"
+        style="@style/edittext_style"
+        android:layout_width="fill_parent"
+        android:layout_height="37dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/search_hint"
+        android:inputType="text"
+        android:paddingLeft="9dp"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignBottom="@id/search_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/first_spinner_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/sp_option"
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/filter"
+            android:entries="@array/option_array"
+            android:paddingLeft="10dp"
+            android:prompt="@string/enroll_option" />
+
+        <Spinner
+            android:id="@+id/sp_day"
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/filter"
+            android:entries="@array/enroll_day_array"
+            android:paddingLeft="10dp"
+            android:prompt="@string/enroll_day" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_spinner_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_spinner_bar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/sp_location"
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/filter"
+            android:entries="@array/location_array"
+            android:paddingLeft="10dp"
+            android:prompt="@string/enroll_location" />
+
+        <Spinner
+            android:id="@+id/sp_category"
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/filter"
+            android:entries="@array/category_array"
+            android:paddingLeft="10dp"
+            android:prompt="@string/enroll_category" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:img_btn="http://schemas.android.com/apk/res/com.hiwhu.UI"
+        android:id="@+id/bottom_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <com.hiwhu.widget.FuncImageButton
+            android:id="@+id/get_lesson"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_func_left"
+            android:gravity="center"
+            img_btn:src="@drawable/chengji_huoqu"
+            img_btn:text="@string/get_lesson" />
+
+        <com.hiwhu.widget.FuncImageButton
+            android:id="@+id/enroll_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_func_left"
+            android:gravity="center"
+            img_btn:src="@drawable/xuanke_xuankedan"
+            img_btn:text="@string/enroll_list" />
+
+        <com.hiwhu.widget.FuncImageButton
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_func_left"
+            android:gravity="center"
+            img_btn:src="@drawable/back"
+            img_btn:text="@string/back" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/search_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_bar"
+        android:layout_below="@id/second_spinner_bar"
+        android:layout_marginTop="5dp"
+        android:cacheColorHint="#00000000" />
+
+</RelativeLayout>

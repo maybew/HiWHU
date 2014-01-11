@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="option_array">
+        <item>按课程名</item>
+        <item>按教师名</item>
+    </string-array>
+    <string-array name="weekday_array">
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+        <item>周日</item>
+    </string-array>
+    <string-array name="enroll_day_array">
+        <item>时间不限</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+        <item>周日</item>
+    </string-array>
+    <string-array name="location_array">
+        <item>地点不限</item>
+        <item>文理学部（1区）</item>
+        <item>工学部（2区）</item>
+        <item>信息学部（3区）</item>
+        <item>医学部（4区）</item>
+    </string-array>
+    <string-array name="category_array">
+        <item>领域不限</item>
+        <item>数学与自然科学领域</item>
+        <item>人文科学领域</item>
+        <item>中华文明与外国文化领域</item>
+        <item>跨学科领域</item>
+        <item>社会科学领域</item>
+    </string-array>
+    <string-array name="semesterweek_array">
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>七</item>
+        <item>八</item>
+        <item>九</item>
+    </string-array>
+
+    <string name="app_name">HiWHU</string>
+    <string name="btn_default">添加</string>
+    <string name="cheng_ji_dan">成绩单</string>
+    <string name="ke_cheng_biao">课程表</string>
+    <string name="xuan_ke">选	课</string>
+    <string name="xiao_yuan_ka">校园卡</string>
+    <string name="xin_wen">新闻</string>
+    <string name="jiang_zuo">讲座</string>
+    <string name="zhao_pin">招聘</string>
+    <string name="zhou_bian">周边</string>
+    <string name="yin_si_kong_zhi">隐私控制</string>
+    <string name="liu_liang_tong_ji">流量统计</string>
+    <string name="gong_neng_yin_dao">功能引导</string>
+    <string name="ban_ben_xin_xi">版本信息</string>
+    <string name="tab_list_item01">我的主页</string>
+    <string name="tab_list_item02">教务信息</string>
+    <string name="tab_list_item03">校园资讯</string>
+    <string name="tab_list_item04">个人设置</string>
+    <string name="userName">用户名</string>
+    <string name="userPwd">密码</string>
+    <string name="stuNum">学工号</string>
+    <string name="info">初始密码为身份证后六位</string>
+    <string name="submit">登  录</string>
+    <string name="start">开启隐私控制</string>
+    <string name="cancel">取消隐私控制</string>
+    <string name="confirm">确  认</string>
+    <string name="authentication">请输入您的登录密码以完成身份认证</string>
+    <string name="authentication_hint">请输入您的登录密码</string>
+    <string name="start_msg">隐私控制已开启，该密码与登录密码一致</string>
+    <string name="cancel_msg">隐私控制已取消</string>
+    <string name="privacy_control_description">隐私控制可以帮助您控制\"成绩单\"和\"校园卡\"的访问权限，通过添加密码，保护您的隐私</string>
+    <string name="xujie">一键续借</string>
+    <string name="search_hint">输入课程名或教师名</string>
+    <string name="enroll_option">选择查询类型</string>
+    <string name="enroll_day">选择查询时间</string>
+    <string name="enroll_location">选择查询地点</string>
+    <string name="enroll_category">选择查询领域</string>
+    <string name="get_lesson">获取课程</string>
+    <string name="enroll_list">选课单</string>
+    <string name="back">返回上级</string>
+    <string name="enroll_cancel">返回</string>
+    <string name="enroll_upload">提交</string>
+    <string name="no_enroll_lesson">您尚未选择任何公选课</string>
+    <string name="all_score">所有成绩</string>
+    <string name="analyse_gpa">计算绩点</string>
+    <string name="team">开发团队</string>
+    <string name="update">升级更新</string>
+    <string name="zixun_list">资讯列表</string>
+    <string name="zixun_liked">我喜欢的</string>
+    <string name="zixun_add">我要收藏</string>
+    <string name="zixun_share">我要分享</string>
+    <string name="more">更多</string>
+    <string name="change_user">切换用户</string>
+    <string name="log_out">注销登录</string>
+    <string name="main_update">数据更新</string>
+    <string name="info1">\nHiWHU   V2.2.0\n\nHiWHU是一款为武汉大学师生量身定制的信息服务应用软件，
+其功能包括成绩查询、课表查询、GPA计算、学分查询、公选课查询及选课、校园资讯等，界面清新简洁，用户操作简单，
+帮助您轻松获取及处理信息。\n\n如有疑问，欢迎与我们联系。\n\nEmail: zj_hiwhu@163.com\n
+\n开发团队(排名按猜拳顺序)：\n龚超\n章骏\n魏博恒\n肖循\n彭卉\n谭皓\n
+\n指导老师：\n张曙光\n蔡恒进\n\nEmail: join_hiwhu@163.com\n\n欢迎你的加入!\n</string>
+
+    <string name="pull_to_fresh">下拉可以刷新</string>
+    <string name="release_to_fresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新..</string>
+    <string name="last_update_time">最近更新</string>
+
+</resources>

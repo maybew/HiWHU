@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    >
+<TextView  
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="@string/userName"
+    android:textSize="18dip"
+    android:id="@+id/userName"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="5dip"
+    android:layout_marginRight="5dip"
+    android:layout_marginTop="5dip"
+    android:textColor="@android:color/black"
+    />
+<EditText 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:id="@+id/userNameIn"
+    android:layout_below="@id/userName"
+    android:layout_marginLeft="5dip"
+    android:layout_marginRight="5dip"
+    android:layout_marginTop="5dip"
+    android:textColor="@android:color/black"
+    android:paddingLeft="15dip"
+    android:hint="@string/stuNum"
+    android:textColorHint="@android:color/black"
+    android:inputType="number"
+    />
+<TextView  
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="@string/userPwd"
+    android:textSize="18dip"
+    android:id="@+id/userPwd"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@id/userNameIn"
+    android:layout_marginLeft="5dip"
+    android:layout_marginRight="5dip"
+    android:layout_marginTop="5dip"
+    android:textColor="@android:color/black"
+    />
+<EditText  
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/userPwdIn" 
+    android:layout_below="@id/userPwd"
+    android:layout_marginLeft="5dip"
+    android:layout_marginRight="5dip"
+    android:layout_marginTop="5dip"
+    android:textColor="@android:color/black"
+    android:paddingLeft="15dip"
+	android:textColorHint="@android:color/black"
+    android:hint="@string/info"
+    android:inputType="textVisiblePassword"
+    />
+<Button  
+    android:layout_width="200dip"
+    android:layout_height="wrap_content"
+    android:id="@+id/submit" 
+    android:layout_below="@id/userPwdIn"
+    android:layout_centerHorizontal="true"
+    android:text="@string/submit"
+    android:textSize="20dip"
+    android:layout_marginLeft="5dip"
+    android:layout_marginRight="5dip"
+    android:layout_marginTop="10dip"
+    android:textColor="@android:color/black"
+    />
+
+</RelativeLayout>

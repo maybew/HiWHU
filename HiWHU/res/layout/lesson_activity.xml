@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@android:color/white">
+	<com.hiwhu.widget.LessonTitleLayout
+		android:layout_width="fill_parent"
+		android:layout_height="36dp"
+		android:id="@+id/lessonTitle"
+	/>
+
+	<ScrollView
+	  	android:orientation="vertical"
+ 		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_below="@id/lessonTitle"
+  		android:id="@+id/scroll"
+	>
+	<com.hiwhu.widget.LessonContentLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/lessonContent"
+	/>
+	</ScrollView>
+</RelativeLayout>

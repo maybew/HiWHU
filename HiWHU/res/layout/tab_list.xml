@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hiwhu.widget.TabListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_list_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/tab_list_item01" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/tab_list_item02" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/tab_list_item03" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/tab_list_item04" />
+
+</com.hiwhu.widget.TabListView>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+        <LinearLayout
+        xmlns:img_btn="http://schemas.android.com/apk/res/com.hiwhu.UI"
+        android:id="@+id/bottom_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <com.hiwhu.widget.FuncImageButton
+            android:id="@+id/info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_func_left"
+            android:gravity="center"
+            img_btn:src="@drawable/banben_xinxi"
+            img_btn:text="@string/ban_ben_xin_xi" />
+
+        <com.hiwhu.widget.FuncImageButton
+            android:id="@+id/update"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_func_left"
+            android:gravity="center"
+            img_btn:src="@drawable/banben_gengxin"
+            img_btn:text="@string/update" />
+
+        <com.hiwhu.widget.FuncImageButton
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_func_left"
+            android:gravity="center"
+            img_btn:src="@drawable/back"
+            img_btn:text="@string/back" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp" 
+        android:layout_above="@id/bottom_bar">
+
+        <TextView
+            android:id="@+id/info_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/info1"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </ScrollView>
+
+</RelativeLayout>

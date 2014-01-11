@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:tag="daylist_lesson"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:tag="daylist_nolesson"
+        android:text="今日无课"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:visibility="visible" />
+
+</LinearLayout>

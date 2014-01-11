@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:img_btn="http://schemas.android.com/apk/res/com.hiwhu.widget"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/head_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="37dp"
+        android:background="@drawable/header" >
+
+        <TextView
+            android:id="@+id/week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="第一周"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/op"
+            android:layout_width="20dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/filter" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/op"
+            android:text="你好"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <!-- 中央空白区 -->
+
+    <TextView
+        android:id="@+id/center_blank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:textSize="5dp" />
+
+    <com.hiwhu.widget.MainNewsFlipper
+        android:id="@+id/main_flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/center_blank"
+        android:layout_below="@id/head_layout"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/op_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/head_layout"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <Button
+            android:id="@+id/change_user"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/header_dropdown"
+            android:text="@string/change_user"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/log_out"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/header_dropdown"
+            android:text="@string/log_out"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/main_update"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/header_dropdown"
+            android:text="@string/main_update"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- 底部空白区 -->
+
+    <TextView
+        android:id="@+id/bottom_blank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/footer"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:text="hiwhu"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:img_btn="http://schemas.android.com/apk/res/com.hiwhu.UI"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_blank"
+        android:layout_below="@id/main_flipper"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <com.hiwhu.widget.BtnsLayout
+            android:id="@+id/btns_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <com.hiwhu.widget.MattsLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <com.hiwhu.widget.MyImageButton
+                    android:id="@+id/btn_custom_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    img_btn:src="@drawable/btn_default"
+                    img_btn:text="@string/btn_default" />
+
+                <com.hiwhu.widget.MyImageButton
+                    android:id="@+id/btn_custom_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    img_btn:src="@drawable/btn_default"
+                    img_btn:text="@string/btn_default" />
+
+                <com.hiwhu.widget.MyImageButton
+                    android:id="@+id/btn_custom_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    img_btn:src="@drawable/btn_default"
+                    img_btn:text="@string/btn_default" />
+
+                <com.hiwhu.widget.MyImageButton
+                    android:id="@+id/btn_custom_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    img_btn:src="@drawable/btn_default"
+                    img_btn:text="@string/btn_default" />
+            </com.hiwhu.widget.MattsLayout>
+
+            <com.hiwhu.widget.MattsLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <com.hiwhu.widget.MyImageButton
+                    android:id="@+id/btn_cheng_ji_dan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    img_btn:src="@drawable/btn_cheng_ji_dan"
+                    img_btn:text="@string/cheng_ji_dan" />
+
+                <com.hiwhu.widget.MyImageButton
+                    android:id="@+id/btn_ke_cheng_biao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    img_btn:src="@drawable/btn_ke_cheng_biao"
+                    img_btn:text="@string/ke_cheng_biao" />
+
+                <com.hiwhu.widget.MyImageButton
+                    android:id="@+id/btn_xuan_ke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    img_btn:src="@drawable/btn_xuan_ke"
+                    img_btn:text="@string/xuan_ke" />
+
+                <com.hiwhu.widget.MyImageButton
+                    android:id="@+id/btn_xiao_yuan_ka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    img_btn:src="@drawable/btn_xiao_yuan_ka"
+                    img_btn:text="@string/xiao_yuan_ka" />
+            </com.hiwhu.widget.MattsLayout>
+
+            <com.hiwhu.widget.MattsLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <com.hiwhu.widget.MyImageButton
+                    android:id="@+id/btn_xin_wen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    img_btn:src="@drawable/btn_xin_wen"
+                    img_btn:text="@string/xin_wen" />
+
+                <com.hiwhu.widget.MyImageButton
+                    android:id="@+id/btn_jiang_zuo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    img_btn:src="@drawable/btn_jiang_zuo"
+                    img_btn:text="@string/jiang_zuo" />
+
+                <com.hiwhu.widget.MyImageButton
+                    android:id="@+id/btn_zhao_pin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    img_btn:src="@drawable/btn_zhao_pin"
+                    img_btn:text="@string/zhao_pin" />
+
+                <com.hiwhu.widget.MyImageButton
+                    android:id="@+id/btn_zhou_bian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    img_btn:src="@drawable/btn_zhou_bian"
+                    img_btn:text="@string/zhou_bian" />
+            </com.hiwhu.widget.MattsLayout>
+
+            <com.hiwhu.widget.MattsLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <com.hiwhu.widget.MyImageButton
+                    android:id="@+id/btn_yin_si_kong_zhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    img_btn:src="@drawable/btn_yin_si_kong_zhi"
+                    img_btn:text="@string/yin_si_kong_zhi" />
+
+                <com.hiwhu.widget.MyImageButton
+                    android:id="@+id/btn_liu_liang_tong_ji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    img_btn:src="@drawable/btn_liu_liang_tong_ji"
+                    img_btn:text="@string/liu_liang_tong_ji" />
+
+                <com.hiwhu.widget.MyImageButton
+                    android:id="@+id/btn_gong_neng_yin_dao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    img_btn:src="@drawable/btn_gong_neng_yin_dao"
+                    img_btn:text="@string/gong_neng_yin_dao" />
+
+                <com.hiwhu.widget.MyImageButton
+                    android:id="@+id/btn_ban_ben_xin_xi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    img_btn:src="@drawable/btn_ban_ben_xin_xi"
+                    img_btn:text="@string/ban_ben_xin_xi" />
+            </com.hiwhu.widget.MattsLayout>
+        </com.hiwhu.widget.BtnsLayout>
+
+        <com.hiwhu.widget.TabListLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/tab_list_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="2" >
+        </com.hiwhu.widget.TabListLayout>
+    </LinearLayout>
+
+    <SlidingDrawer
+        android:id="@+id/slidingdrawer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/head_layout"
+        android:content="@+id/content"
+        android:handle="@+id/handle"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@id/handle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/footer"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:textColor="@android:color/white"
+            android:textSize="21sp" />
+
+        <RelativeLayout
+            android:id="@id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/pull_up" >
+
+            <com.hiwhu.widget.ListFlipper
+                android:id="@+id/sdDayList"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" >
+
+            </com.hiwhu.widget.ListFlipper>
+        </RelativeLayout>
+    </SlidingDrawer>
+
+</RelativeLayout>
